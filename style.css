@@ -60,6 +60,10 @@ a:hover {
   left: 85vw;
 }
 
+address {
+  font-style: normal;
+}
+
 h1, h2 {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -141,6 +145,11 @@ table tbody td {
   animation-iteration-count: 1;
 }
 
+::marker {
+  font-size: 2vw;
+  font-weight: 700;
+}
+
 .visit {
   background-image: linear-gradient(-10deg, rgb(218, 238, 240), rgb(225, 241, 223));
   padding: 1vmax 2vmax;
@@ -150,10 +159,49 @@ table tbody td {
   background-image: linear-gradient(40deg, rgb(218, 238, 240), rgb(225, 241, 223));
   padding: 1vmax 2vmax;
 }
+.stay ol {
+  display: flex;
+  margin: 2vmax;
+}
+.stay ol h4 {
+  font-size: 2vw;
+}
+.stay ol img {
+  width: 60%;
+  height: 80%;
+  border-radius: 1vmax;
+}
 
 .learn {
   background-image: linear-gradient(-10deg, rgb(218, 238, 240), rgb(225, 241, 223));
   padding: 1vmax 2vmax;
+}
+.learn .learn-layout {
+  display: flex;
+  justify-content: space-evenly;
+}
+.learn .learn-layout img {
+  width: 50%;
+  border-radius: 0.5vmax;
+}
+.learn .learn-layout .learn-text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-inline: 0.5vmax;
+}
+.learn .learn-layout .learn-text h4 {
+  font-size: 2vw;
+}
+.learn .learn-layout .learn-text p {
+  line-height: 2;
+  letter-spacing: 0.05vw;
+}
+.learn .learn-layout .learn-text p::first-letter {
+  font-size: 1.5vw;
+  color: #292929;
+  text-shadow: 0 0 1px #292929;
 }
 
 .about {
@@ -192,6 +240,46 @@ table tbody td {
 }
 .about .team .personal-card .intro {
   font-size: 1vw;
+}
+.about .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 45vh;
+}
+.about .contact .contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 60%;
+}
+.about .contact * {
+  margin-block: 1vmax;
+}
+.about .contact h4 {
+  font-size: 2vw;
+  letter-spacing: 0.2vw;
+}
+.about .contact a {
+  position: relative;
+}
+
+footer {
+  position: relative;
+  height: 10vh;
+  background-image: linear-gradient(10deg, #8db894, #88c07b);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer a {
+  position: static;
+}
+footer img {
+  width: 3vmax;
+  height: 3vmax;
 }
 
 @keyframes notice {
